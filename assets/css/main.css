@@ -1,0 +1,78 @@
+body{
+        background-image: url(photo/cover.jpg);
+        background-color: rgba(192,192,192,0.9);
+        background-size: cover;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed;
+        text-align: center;
+      }
+      form{
+        background: rgba(192,192,192,0.9);
+        color: white;
+        border-radius: 50px;
+        padding: 40px;
+        margin-top: 200px;
+        padding-bottom: 60px;
+        box-shadow: 10px 10px 5px red
+      }
+      h1{
+        text-align: center;
+      }
+      .btn{
+        border-radius: 50px;
+      }
+      .form-control{
+        border-radius: 0px;
+        background-color: rgba(23, 3, 3, 0.48);
+        color: white;
+        border-radius:1px solid #291212
+      }
+      .header{
+        text-align: right;
+        margin-right: 100px;
+        border: 1px solid blue;
+        background-color: rgba(23, 3, 3, 0.48);
+        float: right; 
+        box-shadow: 10px 10px 5px rgba(6, 1, 1, 0.43)
+      }
+      .nav{
+        text-align: left;
+      }
+      .legend{
+        color: white;
+        text-align: left;
+      }
+      .menu{
+        text-align: right;
+        margin: auto;
+        border: 1px solid blue;
+        border-radius: 50px;
+        background-color: rgba(192,192,192,0.9);
+        float: right; 
+        box-shadow: 10px 10px 5px red
+
+      }
+      .hmenu{
+        font-size: 20px;
+      }
+      table{
+        border: 2px solid red;
+        background-color: rgba(192,192,192,0.9);
+        margin: auto;
+      }
+      th{
+        text-align: center;
+        border: 2px solid red;
+      }
+      td{
+        text-align: center;
+        border: 2px solid red;
+      }
+      .pied_de_page{
+        text-align: left;
+        color: white;
+        font-size: 10px;
+            margin: auto;
+      }
