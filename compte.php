@@ -4,15 +4,17 @@
   <title>Modifications</title>
 </head>
 <body>
-  <?php include("entete.php"); ?>
   <?php
     session_start();
     if(empty($_SESSION)){
     header("Refresh:0; URL=index.php");
   } 
+  include("entete.php");
+
+  include("comptenavbar.php");
     ?>
   <div class="container">
-     <h1><i><u>Mon compte : <?php echo htmlspecialchars($_SESSION['login']); ?> </u></i></h1>
+     <h1><i><u>Mon compte : </u></i></h1>
       <?php session_start(); ?>
       <legend class="legend">Gestion de compte :</legend>
       <form action="cible_mdp.php" method="post">

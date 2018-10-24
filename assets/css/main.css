@@ -58,6 +58,7 @@ body{
         font-size: 20px;
       }
       table{
+        text-align: center;
         border: 2px solid red;
         background-color: rgba(192,192,192,0.9);
         margin: auto;
@@ -65,10 +66,14 @@ body{
       th{
         text-align: center;
         border: 2px solid red;
+        font-size: 30px;
+        margin: auto;
       }
       td{
         text-align: center;
         border: 2px solid red;
+        font-size: 20px;
+        margin: auto;
       }
       .pied_de_page{
         text-align: left;

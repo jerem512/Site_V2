@@ -9,10 +9,11 @@
     if(empty($_SESSION)){
     header("Refresh:0; URL=index.php");
   } 
-    ?>
-    <?php include("entete.php"); ?>
+    include("PDO/co_bdd.php");
 
-    <?php include("menu_co.php") ?>
+    include("entete.php"); 
+
+    include("navbar.php"); ?>
 
     <h1><u>Liste des jeux :</u></h1>
     <table>
@@ -25,18 +26,8 @@
     </thead>
 
     <?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=JEU;charset=utf8', 'jeremydata', 'b302937ba5');
-}
-catch(Exception $e)
-{
-
-        die('Erreur : '.$e->getMessage());
-}
-
+include("PDO/co_bdd.php");
 $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
-
 while ($donnees = $reponse->fetch())
 {
 ?>
@@ -49,12 +40,9 @@ while ($donnees = $reponse->fetch())
 </tbody>
 <?php
 }
-
 $reponse->closeCursor();
-
 ?>
 </table>
-    <a href="app.php" class="btn btn-default">Retour</a>
 </body>
 <?php include("pied_de_page.php") ?>
 </html>

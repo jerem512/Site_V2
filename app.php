@@ -4,16 +4,14 @@
   <title>Vente de jeux</title>
 </head>
 <body>
-  <?php include("entete.php"); ?>
-
   <?php
     session_start();
     if(empty($_SESSION)){
     header("Refresh:0; URL=index.php");
   } 
-    ?>
-  
-  <?php include("menu_co.php") ?>
+    include("navbar.php");
+    include("entete.php"); 
+ ?>
   
   <div class="container">
         <div class="row">

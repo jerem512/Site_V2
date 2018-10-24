@@ -5,38 +5,25 @@
     <title>Ma liste de jeux</title>
 </head>
 <body>
-    <?php include("entete.php") ?>
-
-  <?php
+    <?php 
+    include("entete.php");
     session_start();
+    include("navbar.php");
     if(empty($_SESSION)){
     header("Refresh:0; URL=index.php");
-  } 
-    ?>
+  }
+    include("testnavbar.php");
+    include("PDO/co_bdd.php");
 
-    <?php include("menu_co.php") ?>
-
-    <?php 
-        $reponse = $bdd->query('SELECT * FROM jeux_video WHERE login = :login ORDER BY nom');
-        $reponse->bindParam(':login',$_SESSION['login']);
-        $sucess = $reponse->execute();
-        if($sucess === true){
+    $req = $bdd->prepare('SELECT login, nom FROM jeux_video WHERE login = admin');
+        while ($donnees = $req->fetch()){
             var_dump($donnees['nom']);
-            echo 'ehoh';
         }
-        else{
-            echo 'bye !';
-        }
+    
+
+
 
 
 ?>
-<?php
-
-$reponse->closeCursor();
-
-?>
-
-
-
 </body>
 </html>
