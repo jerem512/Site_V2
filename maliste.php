@@ -16,16 +16,13 @@
        </tr>
     </thead>
     <?php 
-    include("entete.php");
-    session_start();
-    include("navbar.php");
-    if(empty($_SESSION)){
-    header("Refresh:0; URL=index.php");
-  }
-    include("testnavbar.php");
-    include("PDO/co_bdd.php");
+        session_start();
+        include("entete.php");
+        include("navbar.php");
+        include("testnavbar.php");
+        include("PDO/co_bdd.php");
 
-    $req = $bdd->prepare('SELECT * FROM jeux_video WHERE login = :login ORDER BY nom');
+        $req = $bdd->prepare('SELECT * FROM jeux_video WHERE login = :login ORDER BY nom');
         $req->bindParam(':login', $_SESSION['login'] );
         $success = $req->execute();
         while($donnees = $req->fetch()){
@@ -38,10 +35,11 @@
     </tr>
 </tbody>
 <?php
-}
-$reponse->closeCursor();
+    }
+    $reponse->closeCursor();
 ?>
 </table>
 </div>
 </body>
+<?php include("pied_de_page.php") ?>
 </html>
