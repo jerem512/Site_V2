@@ -6,12 +6,12 @@
 <body>
   <?php
     session_start();
-    if(empty($_SESSION)){
-    header("Refresh:0; URL=index.php");
-  } 
+
+    include("auth.php");
+
     include("PDO/co_bdd.php");
 
-    include("entete.php"); 
+    include("header.php"); 
 
     include("navbar.php"); ?>
 
@@ -45,5 +45,5 @@
 </table>
 </div>
 </body>
-<?php include("pied_de_page.php") ?>
+<?php include("footer.php") ?>
 </html>

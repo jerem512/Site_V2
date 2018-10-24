@@ -5,6 +5,11 @@
     <title>Ma liste de jeux</title>
 </head>
 <body>
+    <?php
+        session_start(); 
+        include("header.php");
+        include("navbar.php");
+     ?>
     <h1><u>Mes jeux :</u></h1>
     <div class="container">
     <table>
@@ -16,10 +21,6 @@
        </tr>
     </thead>
     <?php 
-        session_start();
-        include("entete.php");
-        include("navbar.php");
-        include("testnavbar.php");
         include("PDO/co_bdd.php");
 
         $req = $bdd->prepare('SELECT * FROM jeux_video WHERE login = :login ORDER BY nom');
@@ -41,5 +42,5 @@
 </table>
 </div>
 </body>
-<?php include("pied_de_page.php") ?>
+<?php include("footer.php") ?>
 </html>

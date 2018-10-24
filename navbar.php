@@ -49,7 +49,7 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="app.php">Home</a></li>
               <li><a href="hist.php">A propos</a></li>
-              <li><a href="contact.php">Contact</a></li>
+              <li><a href="auth.php">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo htmlspecialchars($_SESSION['login']); ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
                   <li><a href="liste.php">Liste des jeux</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Déconnexion</li>
-                  <li><a href="deco.php">Se déconnecter</a></li>
+                  <li><a href="logout.php">Se déconnecter</a></li>
                 </ul>
               </li>
             </ul>

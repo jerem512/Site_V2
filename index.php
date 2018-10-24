@@ -4,7 +4,7 @@
   <title>Connexion</title>
 </head>
 <body>
-  <?php include("entete.php"); ?>
+  <?php include("header.php"); ?>
 <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
@@ -31,5 +31,5 @@
         </div>
 </div>
 </body>
-<?php include("pied_de_page.php") ?>
+<?php include("footer.php") ?>
 </html>
