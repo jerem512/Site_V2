@@ -6,7 +6,7 @@
 <body>
   <?php
     session_start(); 
-    include("entete.php");
+    include("header.php");
     include("comptenavbar.php");
   ?>
   <div class="container">
@@ -45,6 +45,6 @@
       <br> <br>      
       <a href="app.php" class="btn btn-default">Retour</a> 
   </div>
-  <?php include("pied_de_page.php") ?>
+  <?php include("footer.php") ?>
 </body>
 </html>

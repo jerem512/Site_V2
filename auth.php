@@ -5,7 +5,7 @@
     $success = $req->execute();
     if($donnees = $req->fetch()){
         if($donnees['id'] === $_SESSION['id'] && $donnees['login'] === $_SESSION['login']){
-            echo 'ok good';
+            header("Location: contact.php");
         }
         else{
             header("Location: index.php");

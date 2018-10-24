@@ -43,7 +43,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Site_V2</a>
+            <a class="navbar-brand">Site_V2</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -54,8 +54,8 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo htmlspecialchars($_SESSION['login']); ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">Mon compte</li>
-                  <li><a href="liste.php">Mes jeux</a></li>
-                  <li><a href="maliste.php">Liste des jeux</a></li>
+                  <li><a href="maliste.php">Mes jeux</a></li>
+                  <li><a href="liste.php">Liste des jeux</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Déconnexion</li>
                   <li><a href="deco.php">Se déconnecter</a></li>

@@ -7,7 +7,7 @@
   <?php
     session_start();
 
-    include("auth.php");
+    // include("auth.php");
 
     include("PDO/co_bdd.php");
 
@@ -28,7 +28,7 @@
 
     <?php
       include("PDO/co_bdd.php");
-      $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
+      $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY prix');
       while ($donnees = $reponse->fetch()){
 ?>
 <tbody>
