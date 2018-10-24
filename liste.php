@@ -28,7 +28,7 @@
 
     <?php
       include("PDO/co_bdd.php");
-      $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY prix');
+      $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
       while ($donnees = $reponse->fetch()){
 ?>
 <tbody>
