@@ -7,6 +7,7 @@ body{
         background-position: center; 
         background-attachment: fixed;
         text-align: center;
+
       }
       form{
         background: rgba(192,192,192,0.9);
@@ -58,10 +59,9 @@ body{
         font-size: 20px;
       }
       table{
-        text-align: center;
+        margin: auto;
         border: 2px solid red;
         background-color: rgba(192,192,192,0.9);
-        margin: auto;
       }
       th{
         text-align: center;

@@ -16,6 +16,7 @@
     include("navbar.php"); ?>
 
     <h1><u>Liste des jeux :</u></h1>
+    <div class="container">
     <table>
     <thead>
         <tr>
@@ -43,6 +44,7 @@ while ($donnees = $reponse->fetch())
 $reponse->closeCursor();
 ?>
 </table>
+</div>
 </body>
 <?php include("pied_de_page.php") ?>
 </html>
