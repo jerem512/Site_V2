@@ -1,5 +1,6 @@
-<?php include("co_bdd.php") ?>
 <?php
+include("PDO/co_bdd.php");
+
 if(isset($_POST['login'], $_POST['password'])){
     $req=$bdd->prepare('SELECT id, login, password FROM users WHERE login = :login');
     $req->bindParam(':login',$_POST['login']);

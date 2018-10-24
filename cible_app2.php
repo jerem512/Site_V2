@@ -1,16 +1,6 @@
-<?php include("co_bdd.php") ?>
-<?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=JEU;charset=utf8', 'jeremydata', 'b302937ba5');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
+<?php 
 
-?>
-<?php
+    include("PDO/co_bdd.php");
 
     if(isset($_POST['nom2'], $_POST['ancien_possesseur'], $_POST['nouveau_possesseur'], $_POST['console2'], $_POST['prix_vente'])){
         $req = $bdd->prepare('INSERT INTO vente_jeux(nom2, ancien_possesseur, nouveau_possesseur, console2, prix_vente) VALUES(:nom2, :ancien_possesseur, :nouveau_possesseur, :console2, :prix_vente)');
@@ -32,10 +22,6 @@ catch(Exception $e)
             echo 'Les champs entrés ne sont pas conformes !';
             header("Refresh: 0; URL=index.php");
         }
-
- ?>
- 
-<?php
-
-$reponse->closeCursor();
+        
+        $reponse->closeCursor(); 
 ?>

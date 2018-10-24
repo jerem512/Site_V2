@@ -1,5 +1,4 @@
-<?php include("co_bdd.php") ?>
-<?php
+<?php include("PDO/co_bdd.php");
 
     if(isset($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['date_naissance'], $_POST['login'], $_POST['password'])){
         $hashedPassword = password_hash($_POST['password'], PASSWORD_ARGON2I);
@@ -31,10 +30,6 @@
             echo 'Les champs entrés ne sont pas conformes !';
             header("Refresh: 0; URL=inscription.php");
         }
-
- ?>
-
-<?php
-
-$reponse->closeCursor();
+        
+        $reponse->closeCursor(); 
 ?>
