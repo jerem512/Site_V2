@@ -1,7 +1,5 @@
 <?php 
-
     include("PDO/co_bdd.php");
-
     if(isset($_POST['nom2'], $_POST['ancien_possesseur'], $_POST['nouveau_possesseur'], $_POST['console2'], $_POST['prix_vente'])){
         $req = $bdd->prepare('INSERT INTO vente_jeux(nom2, ancien_possesseur, nouveau_possesseur, console2, prix_vente) VALUES(:nom2, :ancien_possesseur, :nouveau_possesseur, :console2, :prix_vente)');
         $req->bindParam(':nom2',$_POST['nom2']);
@@ -21,7 +19,6 @@
         else {
             echo 'Les champs entrés ne sont pas conformes !';
             header("Refresh: 0; URL=index.php");
-        }
-        
+        }        
         $reponse->closeCursor(); 
 ?>

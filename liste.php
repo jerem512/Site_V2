@@ -27,10 +27,9 @@
     </thead>
 
     <?php
-include("PDO/co_bdd.php");
-$reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
-while ($donnees = $reponse->fetch())
-{
+      include("PDO/co_bdd.php");
+      $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
+      while ($donnees = $reponse->fetch()){
 ?>
 <tbody>
 <tr>
@@ -41,7 +40,7 @@ while ($donnees = $reponse->fetch())
 </tbody>
 <?php
 }
-$reponse->closeCursor();
+    $reponse->closeCursor();
 ?>
 </table>
 </div>

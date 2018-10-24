@@ -1,8 +1,6 @@
 <?php include("PDO/co_bdd.php");
-
     if(isset($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['date_naissance'], $_POST['login'], $_POST['password'])){
         $hashedPassword = password_hash($_POST['password'], PASSWORD_ARGON2I);
-
         $req = $bdd->prepare('INSERT INTO users(nom, prenom, mail, date_naissance, login, password) VALUES(:nom, :prenom, :mail, :date_naissance, :login, :password)');
         $req->bindParam(':nom',$_POST['nom']);
         $req->bindParam(':prenom', $_POST['prenom']);
@@ -24,12 +22,11 @@
             $_SESSION['login'] = $resultat['login'];
             $_SESSION['id'] = $resultat['id'];            
             echo 'Vous êtes maintenant inscrit sur notre site !';
-            header("Refresh: 0; URL=index.php");
+            header("Refresh: 0; URL=app.php");
         }
         else {
             echo 'Les champs entrés ne sont pas conformes !';
             header("Refresh: 0; URL=inscription.php");
         }
-        
         $reponse->closeCursor(); 
 ?>

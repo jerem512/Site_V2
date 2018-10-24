@@ -1,7 +1,6 @@
 <?php 
     include("PDO/co_bdd.php");
     session_start();
-
     if(isset($_POST['nom'], $_POST['console'], $_POST['prix'], $_POST['nbre_joueurs_max'], $_POST['commentaires'])){
         $req = $bdd->prepare('INSERT INTO jeux_video(nom, login, console, prix, nbre_joueurs_max, commentaires) VALUES(:nom, :login, :console, :prix, :nbre_joueurs_max, :commentaires)');
         $req->bindParam(':nom',$_POST['nom']);
@@ -23,7 +22,5 @@
             echo 'Les champs entrés ne sont pas conformes !';
             header("Refresh: 0; URL=app.php");
         }
-    
     $reponse->closeCursor(); 
-
 ?>

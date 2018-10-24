@@ -5,17 +5,12 @@
 </head>
 <body>
   <?php
-    session_start();
-    if(empty($_SESSION)){
-    header("Refresh:0; URL=index.php");
-  } 
-  include("entete.php");
-
-  include("comptenavbar.php");
-    ?>
+    session_start(); 
+    include("entete.php");
+    include("comptenavbar.php");
+  ?>
   <div class="container">
      <h1><i><u>Mon compte : </u></i></h1>
-      <?php session_start(); ?>
       <legend class="legend">Gestion de compte :</legend>
       <form action="cible_mdp.php" method="post">
               <div class="form-group">

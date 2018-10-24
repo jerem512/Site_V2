@@ -6,14 +6,10 @@
 <body>
   <?php
     session_start();
-    if(empty($_SESSION)){
-    header("Refresh:0; URL=index.php");
-  } 
     include("navbar.php");
-    include("entete.php"); 
+    include("header.php"); 
  ?>
-  
-  <div class="container">
+    <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
             <form action="cible_app.php" method="post">
@@ -45,5 +41,5 @@
       </div>
 
 </body>
-<?php include("pied_de_page.php") ?>
+<?php include("footer.php") ?>
 </html>
