@@ -1,1 +1,1 @@
-Site pour tester mes connaissances en php.
+Site pour tester mes connaissances en php. Il est en constante évolution pour voir toutes les nouvelles connaissances acquises au cours de mon apprentissage. 
