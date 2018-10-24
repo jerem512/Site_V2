@@ -4,7 +4,7 @@
   <title>inscription</title>
 </head>
 <body>
-  <?php include("entete.php"); ?>
+  <?php include("header.php"); ?>
   <div class="container">
         <div class="row">
           <div>
@@ -40,6 +40,6 @@
           </div>
         </div>
 </div>
-<?php include("pied_de_page.php") ?>
+<?php include("footer.php") ?>
 </body>
 </html>
