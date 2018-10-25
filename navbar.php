@@ -35,6 +35,7 @@
                   <li><a href="compte.php">Paramètres</a></li>
                   <li><a href="maliste.php">Mes jeux</a></li>
                   <li><a href="liste.php">Liste des jeux</a></li>
+                  <li><a href="listeM.php">Liste des membres</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Déconnexion</li>
                   <li><a href="logout.php">Se déconnecter</a></li>

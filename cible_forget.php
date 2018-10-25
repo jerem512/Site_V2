@@ -6,14 +6,17 @@
 		while ($donnees = $reponse->fetch()){
 			if ($login === $donnees['login']){
 				var_dump($donnees['login']);
-				var_dump($donnees['id']);
 				echo '</br>';
+				// header("Location: forgetmdp.php");
+			}
+			else{
+				echo 'non';
 			}
 	}
 		// else{
 		// 	echo 'Ce login n\'est pas en base de données !';
 		// }
-$reponse->closeCursor();
+	$reponse->closeCursor();
 
 
  ?>

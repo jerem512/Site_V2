@@ -86,19 +86,23 @@ body{
       }
 
       .icon {
-        text-decoration: none;
         position: relative;
+        color: white;
       }
 
       .icon:before {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         font-family: FontAwesome;
-        font-style: normal;
         font-weight: normal;
-        text-transform: none !important;
+        color:white;
       }
 
       .icon > .label {
         display: none;
+        color: white;
+      }
+      .icone{
+        font-size: 120px;
+        color: white;
       }
