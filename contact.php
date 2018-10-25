@@ -12,10 +12,10 @@
 		include("header.php");
 	 ?>	
 	 <h1><u>Retrouvez et contactez moi sur ces réseaux :</u></h1>
-	 <a class="fa fa-github" style="font-size: 126px; color:white;" href="https://github.com/jerem512?tab=repositories"></a><p>Github</p>
-	 <br>
-	 <a class="fa fa-linkedin" style="font-size:126px;color:white" href="#"></a><p>Linkedin</p>
-	 <br>
-	 <a class="fa fa-mail-forward" style="font-size:126px;color:white" href="mailto:jeremymarchal90@gmail.com"></a><p>Mail</p>
+		<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+		<a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a>
+		<a href="#" class="icon fa-github"><span class="label">Github</span></a>
+		<a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a>
 </body>
 </html>

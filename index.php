@@ -19,12 +19,11 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
               </div>
               <br>
-              
               <button class="btn btn-default">Se connecter</button>
                 <br> <br>
               <a href="inscription.php" class="btn btn-default">Vous n'êtes pas encore inscrits ? Inscrivez-vous !</a>
                 <br> <br>     
-              <a href="#" class="btn btn-default">Mot de passe oublié ?</a>
+              <a href="forget.php" class="btn btn-default">Mot de passe oublié ?</a>
               </p>
             </form>
           </div>

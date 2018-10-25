@@ -41,9 +41,7 @@
                 <input type="textarea" class="form-control" id="textarea" placeholder="exemple@exemple.fr" name="new_mail">
               </div>
               <button class="btn btn-default">Changer les données personnelles</button>
-      </form> 
-      <br> <br>      
-      <a href="app.php" class="btn btn-default">Retour</a> 
+      </form>  
   </div>
   <?php include("footer.php") ?>
 </body>
