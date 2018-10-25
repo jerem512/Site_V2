@@ -34,6 +34,7 @@
                   <li><a href="liste.php">Liste des jeux</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Déconnexion</li>
+                  <li><a href="supprc.php">Supprimer son compte</a></li>
                   <li><a href="logout.php">Se déconnecter</a></li>
                 </ul>
               </li>

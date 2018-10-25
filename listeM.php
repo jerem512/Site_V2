@@ -16,9 +16,8 @@
     <thead>
         <tr>
 			<th>Noms :</th>
-       </tr>
+        </tr>
     </thead>
-
     <?php
       $reponse = $bdd->query('SELECT login FROM users ORDER BY login');
       while ($donnees = $reponse->fetch()){

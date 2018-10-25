@@ -13,10 +13,5 @@
 				echo 'non';
 			}
 	}
-		// else{
-		// 	echo 'Ce login n\'est pas en base de données !';
-		// }
 	$reponse->closeCursor();
-
-
  ?>

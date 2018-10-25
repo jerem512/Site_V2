@@ -19,9 +19,6 @@
               </div>
               <br>
               <button class="btn btn-default">Changer de mot de passe</button>
-              <?php session_start();
-              		var_dump($_SESSION['login']);
-               ?>
     	</form>
     </div>
 </body>
