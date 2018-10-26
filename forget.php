@@ -6,12 +6,13 @@
 </head>
 <body>
 	<?php 
-		include("header.php");
+		include("assets/assists/header.php");
+    include("assets/assists/auth.php");
 ?>
 <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
-            <form class="form-horizontal" action="cible_forget.php" method="post">
+            <form class="form-horizontal" action="assets/cible/cible_forget.php" method="post">
               <br> <br>
             <h1>Mot de passe oublié :</h1>
               <div class="form-group">
@@ -26,5 +27,5 @@
           </div>
       </div>
 </body>
-	<?php include("footer.php") ?>
+	<?php include("assets/assists/footer.php") ?>
 </html>

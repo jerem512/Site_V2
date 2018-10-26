@@ -4,11 +4,14 @@
   <title>inscription</title>
 </head>
 <body>
-  <?php include("header.php"); ?>
+  <?php
+   include("assets/assists/header.php");
+   include("assets/assists/auth.php");
+    ?>
   <div class="container">
         <div class="row">
           <div>
-            <form action="cible_inscription.php" method="post">
+            <form action="assets/cible/cible_inscription.php" method="post">
             <h1>Incrivez-vous :</h1>
               <div>
                <label for="text">Nom:</label>
@@ -40,6 +43,6 @@
           </div>
         </div>
 </div>
-<?php include("footer.php") ?>
+<?php include("assets/assists/footer.php") ?>
 </body>
 </html>

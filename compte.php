@@ -8,6 +8,7 @@
     session_start(); 
     include("header.php");
     include("comptenavbar.php");
+    include("auth.php");
   ?>
   <div class="container">
      <h1><i><u>Mon compte : </u></i></h1>

@@ -5,9 +5,12 @@
 	<title>Changer de mot de passe</title>
 </head>
 <body>
-	<?php include("header.php")  ?>
+	<?php 
+  include("assets/assists/header.php");
+  include("assets/assists/auth.php");  
+  ?>
   <div class="container">
-      <form action="cible_mdp.php" method="post">
+      <form action="assets/cible/cible_mdp.php" method="post">
               <div class="form-group">
                 <legend class="legend">Changement de mot de passe :</legend>
                 <label for="login">Nouveau password :</label>
@@ -22,5 +25,5 @@
     	</form>
     </div>
 </body>
-	<?php include("footer.php") ?>
+	<?php include("assets/assists/footer.php") ?>
 </html>

@@ -4,11 +4,11 @@
   <title>Connexion</title>
 </head>
 <body>
-  <?php include("header.php"); ?>
+  <?php include("assets/assists/header.php"); ?>
 <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
-            <form class="form-horizontal" action="cible_co.php" method="post">
+            <form class="form-horizontal" action="assets/cible/cible_co.php" method="post">
             <h1>Veuillez vous connecter</h1>
               <div class="form-group">
                 <label for="login">Login :</label>
@@ -30,5 +30,5 @@
         </div>
 </div>
 </body>
-<?php include("footer.php") ?>
+<?php include("assets/assists/footer.php") ?>
 </html>

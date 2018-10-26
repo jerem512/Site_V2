@@ -6,13 +6,14 @@
 <body>
   <?php
     session_start();
-    include("navbar.php");
-    include("header.php"); 
+    include("assets/assists/navbar.php");
+    include("assets/assists/header.php");
+    include("assets/assists/auth.php");
  ?>
     <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
-            <form action="cible_app.php" method="post">
+            <form action="assets/cible/cible_app.php" method="post">
             <legend class="legend">Ajoutez un jeu :</legend>
               <div class="form-group">
                 <label for="text" class="control-label">Nom :</label>
@@ -41,5 +42,5 @@
       </div>
 
 </body>
-<?php include("footer.php") ?>
+<?php include("assets/assists/footer.php") ?>
 </html>

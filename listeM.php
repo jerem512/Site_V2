@@ -7,8 +7,9 @@
 <body>
 	<?php
 		session_start();
-		include("header.php");
-		include("navbar.php");
+		include("assets/assists/header.php");
+		include("assets/assists/navbar.php");
+		include("assets/assists/auth.php");
 		include("PDO/co_bdd.php");
 	 ?>
 	 <h1><u>Liste des membres :</u></h1>
@@ -32,6 +33,6 @@
     $reponse->closeCursor();
 ?>
 </table>
-	<?php include("footer.php") ?>
+	<?php include("assets/assists/footer.php") ?>
 </body>
 </html>

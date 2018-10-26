@@ -6,10 +6,15 @@
 	$req->bindParam(':login', $_SESSION['login']);
 	$success = $req->execute();
 		if($success === true){
+?>
+	<script>alert("Compte supprimé !")</script>
+<?php
 			header("Location: index.php");
 		}
 		else{
-			echo 'Impossible de supprimer le compte !';
+?>
+	<script>alert("Impossible de supprimer le compte !")</script>
+<?php
 			header("Refresh: 1; URL= compte.php");
 		}
  ?>

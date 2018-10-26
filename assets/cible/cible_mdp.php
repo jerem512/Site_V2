@@ -5,7 +5,9 @@
 	$pass = $_POST['new_pass'];
 	$pass2 = $_POST['new_pass2'];
 		if (empty($pass || $pass2)){
-			echo 'Les champs sont vides';
+?>
+	<script>alert("Les champs sont vides !") </script>
+<?php
 			header("Refresh:0;URL=compte.php");
 	}
 		elseif ($pass == $pass2) {
@@ -20,7 +22,7 @@
 	}
 		else {
 ?>
-		<script>alert("Les mots de passe sont différents") </script>
+		<script>alert("Les mots de passe sont différents !") </script>
 <?php  
 			header("Refresh:0;URL=compte.php");
 	}

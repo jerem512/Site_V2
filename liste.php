@@ -7,13 +7,13 @@
   <?php
     session_start();
 
-    // include("auth.php");
+    include("assets/assists/auth.php");
 
     include("PDO/co_bdd.php");
 
-    include("header.php"); 
+    include("assets/assists/header.php"); 
 
-    include("navbar.php"); ?>
+    include("assets/assists/navbar.php"); ?>
 
     <h1><u>Liste des jeux :</u></h1>
     <div class="container">
@@ -27,7 +27,6 @@
     </thead>
 
     <?php
-      include("PDO/co_bdd.php");
       $reponse = $bdd->query('SELECT * FROM jeux_video ORDER BY nom');
       while ($donnees = $reponse->fetch()){
 ?>
@@ -45,5 +44,5 @@
 </table>
 </div>
 </body>
-<?php include("footer.php") ?>
+<?php include("assets/assists/footer.php") ?>
 </html>

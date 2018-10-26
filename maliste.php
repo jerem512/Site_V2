@@ -7,8 +7,9 @@
 <body>
     <?php
         session_start(); 
-        include("header.php");
-        include("navbar.php");
+        include("assets/assists/header.php");
+        include("assets/assists/navbar.php");
+        include("assets/assists/auth.php");
      ?>
     <h1><u>Mes jeux :</u></h1>
     <div class="container">
@@ -42,5 +43,5 @@
 </table>
 </div>
 </body>
-<?php include("footer.php") ?>
+<?php include("assets/assists/footer.php") ?>
 </html>
