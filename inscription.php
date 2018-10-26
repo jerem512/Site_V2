@@ -11,7 +11,7 @@
   <div class="container">
         <div class="row">
           <div>
-            <form action="assets/cible/cible_inscription.php" method="post">
+            <form action="cible_inscription.php" method="post">
             <h1>Incrivez-vous :</h1>
               <div>
                <label for="text">Nom:</label>

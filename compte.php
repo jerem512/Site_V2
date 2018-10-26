@@ -6,9 +6,9 @@
 <body>
   <?php
     session_start(); 
-    include("header.php");
-    include("comptenavbar.php");
-    include("auth.php");
+    include("assets/assists/header.php");
+    include("assets/assists/comptenavbar.php");
+    include("assets/assists/auth.php");
   ?>
   <div class="container">
      <h1><i><u>Mon compte : </u></i></h1>
@@ -44,6 +44,6 @@
               <button class="btn btn-default">Changer les données personnelles</button>
       </form>  
   </div>
-  <?php include("footer.php") ?>
+  <?php include("assets/assists/footer.php") ?>
 </body>
 </html>

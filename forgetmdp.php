@@ -10,7 +10,7 @@
   include("assets/assists/auth.php");  
   ?>
   <div class="container">
-      <form action="assets/cible/cible_mdp.php" method="post">
+      <form action="cible_mdp.php" method="post">
               <div class="form-group">
                 <legend class="legend">Changement de mot de passe :</legend>
                 <label for="login">Nouveau password :</label>

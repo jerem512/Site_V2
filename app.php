@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
           <div class="col-sm-offset-2 col-sm-8">
-            <form action="assets/cible/cible_app.php" method="post">
+            <form action="cible_app.php" method="post">
             <legend class="legend">Ajoutez un jeu :</legend>
               <div class="form-group">
                 <label for="text" class="control-label">Nom :</label>
