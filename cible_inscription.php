@@ -21,12 +21,16 @@
             session_start();
             $_SESSION['login'] = $resultat['login'];
             $_SESSION['id'] = $resultat['id'];            
-            echo 'Vous êtes maintenant inscrit sur notre site !';
-            header("Refresh: 0; URL=app.php");
+?>
+        <script>alert("Vous êtes bien inscrit !") </script>
+        <?php
+            header("Refresh: 1; URL=app.php");
         }
         else {
-            echo 'Les champs entrés ne sont pas conformes !';
-            header("Refresh: 0; URL=inscription.php");
+?>
+        <script>alert("Les champs entrés ne sont pas conformes !") </script>
+        <?php
+            header("Refresh: 1; URL=inscription.php");
         }
         $reponse->closeCursor(); 
 ?>

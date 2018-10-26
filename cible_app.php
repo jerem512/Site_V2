@@ -10,16 +10,17 @@
         $req->bindParam(':nbre_joueurs_max', $_POST['nbre_joueurs_max']);
         $req->bindParam(':commentaires', $_POST['commentaires']);        
         $sucess = $req->execute();
-        if($sucess === false){
-           echo implode(' ',$req->errorInfo());
-        }
     }
         if($sucess === true){
-            echo 'Le jeu à bien été ajouté !';
+?>
+        <script>alert("Le jeu a bien été ajouté !")</script>
+        <?php
             header("Refresh: 0; URL=app.php");
         }
         else {
-            echo 'Les champs entrés ne sont pas conformes !';
+?>
+        <script> alert("Un des champs est incorect !")</script>
+        <?php
             header("Refresh: 0; URL=app.php");
         }
     $reponse->closeCursor(); 

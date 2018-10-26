@@ -13,11 +13,15 @@
 			$req=$bdd->prepare('UPDATE users SET password = :password WHERE id = :id');
 			$req->bindParam(':id', $id);
 		$req->bindParam(':password', $hashedPassword);
-		echo 'Mot de passe changé avec succès';
+?> 
+		<script>alert("Votre mot de passe a été changé avec succès !") </script>
+<?php
 		header("Refresh:0;URL=compte.php");
 	}
 		else {
-			echo 'Les mots de passe sont différents';
+?>
+		<script>alert("Les mots de passe sont différents") </script>
+<?php  
 			header("Refresh:0;URL=compte.php");
 	}
 ?>

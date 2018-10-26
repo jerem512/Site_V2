@@ -6,20 +6,27 @@ if(isset($_POST['login'], $_POST['password'])){
     $req->execute();
     $resultat=$req->fetch();
     if(!$resultat){
-    echo 'Mauvais identifiant !';
-    header("Refresh: 1; URL=index.php");   
+    ?>
+    <script>alert("Mauvais identifiants !") </script>
+    <?php 
+        header("Refresh: 1; URL=index.php");
+
 }
     else{
         $isPasswordCorrect = password_verify($_POST['password'], $resultat['password']);
             if($isPasswordCorrect){
                     session_start();
-                    echo 'Vous êtes connectés !';
+                    ?>
+                    <script>alert("Vous êtes connectés !")</script>
+                    <?php
                     $_SESSION['login'] = $resultat['login'];
                     $_SESSION['id'] = $resultat['id'];
-                    header("Refresh: 0; URL=app.php");
+                    header("Refresh: 1; URL=app.php");
                 }
                 else{
-                    echo 'Mauvais mot de passe !';
+                    ?>
+                    <script>alert("Mauvais mot de passe !") </script>
+                    <?php  
                     header("Refresh: 1; URL=index.php");
                 }
             }
