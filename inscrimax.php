@@ -10,11 +10,11 @@
         <div  class="form">
             <form id="contactform">
                 <p class="contact"><label for="name">Nom et prénom</label></p>
-                <input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text">
+                <input id="name" name="name" placeholder="Nom et prénom" required="" tabindex="1" type="text">
                 <p class="contact"><label for="email">Email</label></p>
-                <input id="email" name="email" placeholder="example@domain.com" required="" type="email">
+                <input id="email" name="email" placeholder="example@exemple.com" required="" type="email">
                 <p class="contact"><label for="username">Nom d'utilisateur</label></p>
-                <input id="username" name="username" placeholder="username" required="" tabindex="2" type="text">
+                <input id="username" name="username" placeholder="Login" required="" tabindex="2" type="text">
                 <p class="contact"><label for="password">Mot de passe</label></p>
                 <input type="password" id="password" name="password" required="" type="text" placeholder="Mot de passe">
                 <p class="contact"><label for="repassword">Confirmation du mdp</label></p>
@@ -39,8 +39,8 @@
                   <option value="12">Decembre</option>
                   </label>
                  </select>
-                <label>Jour<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
-                <label>Année<input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+                <label><input class="birthday" maxlength="2" name="BirthDay"  placeholder="Jour" required=""></label>
+                <label><input class="birthyear" maxlength="4" name="BirthYear" placeholder="Année" required=""></label>
               </fieldset>
               <label for="question">Question secrète</label>
             <select class="select-style gender" name="gender">
@@ -51,7 +51,7 @@
             </select><br><br> 
             <p class="contact"><label for="rep">Réponse</label></p>
             <input id="rep" name="rep" placeholder="Réponse" required="" type="text"> <br>
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit">
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="S'inscrire!" type="submit">
    </form>
 </div>
 </body>

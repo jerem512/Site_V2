@@ -32,5 +32,5 @@
         <?php
             header("Refresh: 1; URL=inscription.php");
         }
-        $reponse->closeCursor(); 
+        $req->closeCursor(); 
 ?>
