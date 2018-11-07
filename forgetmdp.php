@@ -6,8 +6,9 @@
 </head>
 <body>
 	<?php 
-  include("assets/assists/header.php");
-  include("assets/assists/auth.php");  
+  session_start();
+  var_dump($login);
+  include("assets/assists/header.php");  
   ?>
   <div class="container">
       <form action="cible_mdp.php" method="post">

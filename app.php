@@ -8,7 +8,7 @@
     session_start();
     include("assets/assists/navbar.php");
     include("assets/assists/header.php");
-    include("assets/assists/auth.php");
+    // include("assets/assists/auth.php");
  ?>
     <div class="container">
         <div class="row">
@@ -40,7 +40,6 @@
           </div>
         </div>
       </div>
-
 </body>
 <?php include("assets/assists/footer.php") ?>
 </html>

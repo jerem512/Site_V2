@@ -8,11 +8,8 @@
     session_start();
 
     include("assets/assists/auth.php");
-
     include("PDO/co_bdd.php");
-
     include("assets/assists/header.php"); 
-
     include("assets/assists/navbar.php"); ?>
 
     <h1><u>Liste des jeux :</u></h1>
