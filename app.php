@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <link rel="shortcut icon" href="./assets/css/photo/logo.png">
   <title>Vente de jeux</title>
 </head>
 <body>

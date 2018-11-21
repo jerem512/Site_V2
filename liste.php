@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="shortcut icon" href="./assets/css/photo/logo.png">
     <title>Liste des jeux</title>
 </head>
 <body>

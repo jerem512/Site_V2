@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="./assets/css/photo/logo.png">
 	<title>Liste des membres</title>
 </head>
 <body>
