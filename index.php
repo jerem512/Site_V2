@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Connexion</title>
+  <link rel="shortcut icon" href="assets/css/photo/logo.png">
 </head>
 <body>
   <?php include("assets/assists/header.php"); ?>

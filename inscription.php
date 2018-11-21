@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./assets/css/main2.css">
+  <link rel="shortcut icon" href="assets/css/photo/logo.png">
   <title>Inscription</title>
 </head>
 <body>
@@ -11,13 +12,13 @@
             <form id="contactform" action="cible_inscriptionmax.php" method="post">
                 <p class="contact"><label for="name">Nom et prénom</label></p>
                 <input id="name" name="name" placeholder="Nom et prénom" required="" tabindex="1" type="text">
-                <p class="contact"><label for="email">Email</label></p>
+                <p class="contact"><label for="mail">Email</label></p>
                 <input id="email" name="email" placeholder="example@exemple.com" required="" type="email">
                 <p class="contact"><label for="username">Nom d'utilisateur</label></p>
-                <input id="username" name="username" placeholder="Login" required="" tabindex="2" type="text">
+                <input id="username" name="login" placeholder="Login" required="" tabindex="2" type="text">
                 <p class="contact"><label for="password">Mot de passe</label></p>
                 <input type="password" id="password" name="password" required="" type="text" placeholder="Mot de passe">
-                <p class="contact"><label for="repassword">Confirmation du mdp</label></p>
+                <p class="contact"><label for="password">Confirmation du mdp</label></p>
                 <input type="password" id="password" name="password2" required="" type="text"
                 placeholder="Confirmation">
                <fieldset>
@@ -44,10 +45,11 @@
               </fieldset>
               <label for="question">Question secrète</label>
             <select class="select-style gender" name="question">
-            <option value="select" >Nom de mon meilleur ami d'enfance ?</option>
-            <option value="m">Lieu de naissance ?</option>
-            <option value="f">Nom de mon professeur en primaire ?</option>
-            <option value="others">.</option>
+            <option value="NULL">- Question secrète -</option>
+            <option>Nom de mon meilleur ami d'enfance ?</option>
+            <option>Lieu de naissance ?</option>
+            <option>Nom de mon professeur en primaire ?</option>
+            <option>Couleur de ma voiture ?</option>
             </select><br><br> 
             <p class="contact"><label for="rep">Réponse</label></p>
             <input id="rep" name="rep" placeholder="Réponse" required="" type="text"> <br>

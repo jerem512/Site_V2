@@ -10,7 +10,7 @@
 <?php
 			header("Refresh:0;URL=compte.php");
 	}
-		elseif ($pass == $pass2) {
+		elseif ($pass === $pass2){
 			$hashedPassword = password_hash($pass, PASSWORD_ARGON2I);
 			$req = $bdd->prepare('UPDATE users SET password = :password WHERE id = :id');
 			$req->bindParam(':id', $id);

@@ -8,7 +8,7 @@
     session_start(); 
     include("assets/assists/header.php");
     include("assets/assists/comptenavbar.php");
-    include("assets/assists/auth.php");
+    // include("assets/assists/auth.php");
   ?>
   <div class="container">
      <h1><i><u>Mon compte : </u></i></h1>

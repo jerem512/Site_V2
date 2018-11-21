@@ -9,7 +9,7 @@
 		session_start();
 		include("assets/assists/header.php");
 		include("assets/assists/navbar.php");
-		include("assets/assists/auth.php");
+		// include("assets/assists/auth.php");
 		include("PDO/co_bdd.php");
 	 ?>
 	 <h1><u>Liste des membres :</u></h1>

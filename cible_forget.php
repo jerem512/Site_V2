@@ -12,7 +12,7 @@
 		elseif ($pass == $pass2) {
 			$hashedPassword = password_hash($pass, PASSWORD_ARGON2I);
 			$req = $bdd->prepare('UPDATE users SET password = :password WHERE login = :login');
-			$req->bindParam(':login', $_POST['login']);
+			$req->bindParam(':login', $login);
 			$req->bindParam(':password', $hashedPassword);
 ?> 
 		<script>alert("Votre mot de passe a été changé avec succès !") </script>

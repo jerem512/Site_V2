@@ -19,7 +19,7 @@
   -webkit-padding-end: 20px;
   -webkit-padding-start: 2px;
   -webkit-user-select: none;
-  background-image: url(images/select-arrow.png),
+  background-color: grey,
     -webkit-linear-gradient(grey, rgba(192,192,192,0.5) 40%, grey);
   background-position: center right;
   background-repeat: no-repeat;

@@ -7,7 +7,7 @@
 <body>
 	<?php 
 		session_start();
-		include("assets/assists/auth.php");
+		// include("assets/assists/auth.php");
 		include("assets/assists/navbar.php");
 		include("assets/assists/header.php");
 	 ?>	
