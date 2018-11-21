@@ -9,7 +9,7 @@
 <body>
   <h1><u><i>Inscrivez-vous !</i></u></h1>
         <div  class="form">
-            <form id="contactform" action="cible_inscriptionmax.php" method="post">
+            <form id="contactform" action="cible_inscription.php" method="post">
                 <p class="contact"><label for="name">Nom et prénom</label></p>
                 <input id="name" name="name" placeholder="Nom et prénom" required="" tabindex="1" type="text">
                 <p class="contact"><label for="mail">Email</label></p>

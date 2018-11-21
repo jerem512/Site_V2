@@ -1,16 +1,27 @@
-<?php include("PDO/co_bdd.php");
-    if(isset($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['date_naissance'], $_POST['login'], $_POST['password'])){
-        $hashedPassword = password_hash($_POST['password'], PASSWORD_ARGON2I);
-        $req = $bdd->prepare('INSERT INTO users(nom, prenom, mail, date_naissance, login, password) VALUES(:nom, :prenom, :mail, :date_naissance, :login, :password)');
-        $req->bindParam(':nom',$_POST['nom']);
-        $req->bindParam(':prenom', $_POST['prenom']);
-        $req->bindParam(':mail', $_POST['mail']);
-        $req->bindParam(':date_naissance', $_POST['date_naissance']);
-        $req->bindParam(':login', $_POST['login']);
-        $req->bindParam(':password', $hashedPassword);
-        $sucess = $req->execute();
-        if($sucess === false){
-           echo implode(' ',$req->errorInfo());
+<?php 
+    include("PDO/co_bdd.php");
+    if(isset($_POST['name'], $_POST['email'], $_POST['login'], $_POST['password'], $_POST['password2'], $_POST['BirthMonth'], $_POST['BirthDay'], $_POST['BirthYear'], $_POST['question'], $_POST['rep'])){
+        $pass = $_POST['password'];
+        $pass2 = $_POST['password2'];
+        if($pass == $pass2){
+            $hashedPassword = password_hash($_POST['password'], PASSWORD_ARGON2I);
+            $req = $bdd->prepare('INSERT INTO users(name, email, login, password, BirthMonth, BirthDay, BirthYear, question, rep) VALUES(:name, :email, :login, :password, :BirthMonth, :BirthDay, :BirthYear, :question, :rep)');
+            $req->bindParam(':name',$_POST['name']);
+            $req->bindParam(':email', $_POST['email']);
+            $req->bindParam(':login', $_POST['login']);
+            $req->bindParam(':password', $hashedPassword);
+            $req->bindParam(':BirthMonth', $_POST['BirthMonth']);
+            $req->bindParam(':BirthDay', $_POST['BirthDay']);
+            $req->bindParam(':BirthYear', $_POST['BirthYear']);
+            $req->bindParam(':question', $_POST['question']);
+            $req->bindParam(':rep', $_POST['rep']);
+            $sucess = $req->execute();
+            if($sucess === false){
+                echo implode(' ',$req->errorInfo());
+            }
+        }
+        else{
+            echo 'non';
         }
     }
         $req = $bdd->prepare('SELECT id, login FROM users WHERE login = :login');
@@ -32,5 +43,5 @@
         <?php
             header("Refresh: 1; URL=inscription.php");
         }
-        $resultat->closeCursor(); 
+        $req->closeCursor(); 
 ?>
